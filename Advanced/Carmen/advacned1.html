@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced1</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function time(num) {
+            var hours = Math.floor(num / 60);
+            var mins = num % 60;
+
+            document.getElementById('demo').innerHTML = num + " = " + hours + " hours and " + mins + " minutes."
+        }
+
+        time(200);
+    </script>
+
+</body>
+
+</html>
