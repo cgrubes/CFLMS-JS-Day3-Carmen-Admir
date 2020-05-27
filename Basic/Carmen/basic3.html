@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Age Calc</title>
+</head>
+
+<body>
+    <script>
+        function ageCalculator(yearbirth) {
+            var date = new Date().getFullYear();
+            console.log(date);
+
+            var young = date - yearbirth - 1;
+            var old = date - yearbirth;
+            var result = [young, old];
+            return result;
+        }
+        document.write("You are either ", ageCalculator(1991)[0], " or ", ageCalculator(1991)[1]);
+    </script>
+</body>
+
+</html>
