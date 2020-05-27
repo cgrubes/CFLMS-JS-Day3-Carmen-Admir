@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <script>
+        function ageCalculator(currentyear, yearbirth) {
+            var young = currentyear - yearbirth - 1;
+            var old = currentyear - yearbirth;
+            var result = [young, old];
+            return result;
+        }
+        document.write("You are either ", ageCalculator(2020, 1991)[0], " or ", ageCalculator(2020, 1991)[1]);
+    </script>
+
+
+
+</body>
+
+</html>
