@@ -8,6 +8,89 @@
 </head>
 
 <body>
+    <p id="demo">
+    </p>
+
+    <script>
+        function show_prompt() {
+            var i = 0;
+            var sum = 0; //declare a variable to keep the sum of numbers
+            do {
+                var number = prompt("Please Enter a Number");
+                sum += parseInt(number); //sum the numbers here
+                i++;
+
+                document.write("Input " + number);
+                document.write("<br>");
+
+            }
+            while (i < 3);
+
+            document.write("Sum of scores : " + sum + "<br>");
+            document.write('Average of scores : ' + sum / i); //use the sum of the numbers divide by the the numbers the user enters
+        }
+        show_prompt();
+
+
+
+
+
+
+
+
+
+        /* function prompt() {
+             var i = 0;
+             var sum = 0;
+
+             do {
+                 var score = prompt("Enter score");
+                 sum += parseInt(score);
+                 i++;
+
+                 document.write("Sum: " + score);
+                 document.write("<br>");
+             }
+             while (i < 2);
+
+             document.write("Average:" + sum / i);
+         }
+         prompt();*/
+
+
+
+
+
+
+
+
+        /*var math = prompt("enter your math grade");
+        var physics = prompt("enter your physics grade");
+        var english = prompt("enter your english grade");
+
+        /*var input1 = document.getElementById("userInput").math;
+          var input2 = document.getElementById("userInput").physics;
+          var input3 = document.getElementById("userInput").english;
+
+          function grade (input1, input2,input3){
+              var sum = input1 + input2 + input3;
+              var average = sum / grade.length;
+              var result = [sum. average];
+              return result;
+          }
+        */
+
+        /*function grade(math, physics, english) {
+                var sum = math + physics + english;
+                var average = sum / grade.length;
+                var result = [sum, average];
+                return result;
+            }
+
+            document.getElementById("demo").innerHTML = (grade[0]);
+            document.write("<br>")
+            document.write(grade[1]);*/
+    </script>
 
 </body>
 
